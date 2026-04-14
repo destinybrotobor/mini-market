@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/icon.jpg" type="image/jpg">
+    <!-- REFERENCE : HTTP RESPONSE CODES: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status -->
+</head>
+
+<body>
+    <header class="bg-slate-800 text-white" id="header-element">
+
+    </header>
+
+    <div class="py-10 text-center">
+        <a href="app/">
+            Proceed to Main App
+        </a>
+    </div>
+
+
+    <script>
+        // fetch(URL); SYNTAX
+        // fetch('header-section.html')
+        // .then((response) => {
+        //     if(response.ok == true){
+        //         return response.text();
+        //     }
+        // })
+        // .then((data) => {
+        //     document.getElementById('header-element').innerHTML = data;
+        // })
+
+        let loadHeader = (headerHTML) => {
+            document.getElementById('header-element').innerHTML = headerHTML;
+        }
+
+        // Alternatively
+        fetch('header-section.html')
+            .then((response) => response.text())
+            .then((data) => loadHeader(data))
+            .catch((error) => {
+                console.log("error", error.response);
+            })
+            .finally(() => {
+                console.log("Header loading process completed");
+            });
+
+
+
+        // Fetching Products
+        fetch('assets/store/products.json')
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data.products[0]);
+        })
+
+    </script>
+</body>
+
+</html>

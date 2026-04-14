@@ -1,0 +1,709 @@
+{
+  "products": [
+    {
+      "id": "prod_001",
+      "name": "UltraVision 4K Smart TV",
+      "description": "55-inch 4K Ultra HD Smart TV with HDR10, built-in Chromecast, and voice remote. Perfect for streaming and gaming.",
+      "category": "Electronics",
+      "subcategory": "Televisions",
+      "price": 599.99,
+      "originalPrice": 799.99,
+      "discountPercent": 25,
+      "currency": "USD",
+      "stock": 24,
+      "sku": "TV-4K55-001",
+      "brand": "UltraVision",
+      "rating": 4.6,
+      "reviewCount": 342,
+      "images": [
+        "https://picsum.photos/id/0/400/300",
+        "https://picsum.photos/id/1/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/0/200/200",
+      "tags": [
+        "smart tv",
+        "4k",
+        "hdr",
+        "streaming"
+      ],
+      "specifications": {
+        "screen size": "55 inch",
+        "resolution": "3840 x 2160",
+        "refresh rate": "60Hz",
+        "ports": [
+          "HDMI x3",
+          "USB x2",
+          "Ethernet"
+        ]
+      },
+      "colors": [
+        "Black",
+        "Silver"
+      ],
+      "isFeatured": true,
+      "createdAt": "2025-01-15T10:00:00Z"
+    },
+    {
+      "id": "prod_002",
+      "name": "AeroSound Wireless Earbuds",
+      "description": "True wireless earbuds with active noise cancellation, 30hr battery life, and IPX7 water resistance.",
+      "category": "Electronics",
+      "subcategory": "Audio",
+      "price": 89.99,
+      "originalPrice": 129.99,
+      "discountPercent": 31,
+      "currency": "USD",
+      "stock": 156,
+      "sku": "AUD-WE-002",
+      "brand": "AeroSound",
+      "rating": 4.4,
+      "reviewCount": 789,
+      "images": [
+        "https://picsum.photos/id/20/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/20/200/200",
+      "tags": [
+        "wireless",
+        "earbuds",
+        "noise cancelling",
+        "bluetooth"
+      ],
+      "specifications": {
+        "battery life": "30 hours",
+        "bluetooth version": "5.2",
+        "charging case": "USB-C"
+      },
+      "colors": [
+        "White",
+        "Black",
+        "Blue"
+      ],
+      "isFeatured": true,
+      "createdAt": "2025-02-10T14:30:00Z"
+    },
+    {
+      "id": "prod_003",
+      "name": "UrbanFlex Slim Fit Jeans",
+      "description": "Stretch denim jeans with slim fit, 5-pocket design, and durable cotton blend. Available in multiple lengths.",
+      "category": "Clothing",
+      "subcategory": "Men's Jeans",
+      "price": 49.95,
+      "originalPrice": 69.95,
+      "discountPercent": 29,
+      "currency": "USD",
+      "stock": 87,
+      "sku": "CLT-JN-003",
+      "brand": "UrbanFlex",
+      "rating": 4.7,
+      "reviewCount": 412,
+      "images": [
+        "https://picsum.photos/id/26/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/26/200/200",
+      "tags": [
+        "jeans",
+        "slim fit",
+        "stretch",
+        "casual"
+      ],
+      "specifications": {
+        "material": "98% Cotton, 2% Elastane",
+        "fit": "Slim",
+        "closure": "Zip fly"
+      },
+      "sizes": [
+        "28x30",
+        "30x30",
+        "32x32",
+        "34x32",
+        "36x34"
+      ],
+      "colors": [
+        "Dark Blue",
+        "Light Blue",
+        "Black"
+      ],
+      "isFeatured": false,
+      "createdAt": "2025-01-05T09:15:00Z"
+    },
+    {
+      "id": "prod_004",
+      "name": "HomeChef Nonstick Fry Pan",
+      "description": "10-inch ceramic nonstick fry pan, oven-safe up to 400°F, PFOA-free, easy clean.",
+      "category": "Home & Kitchen",
+      "subcategory": "Cookware",
+      "price": 29.99,
+      "originalPrice": 49.99,
+      "discountPercent": 40,
+      "currency": "USD",
+      "stock": 203,
+      "sku": "HOM-FP-004",
+      "brand": "HomeChef",
+      "rating": 4.5,
+      "reviewCount": 621,
+      "images": [
+        "https://picsum.photos/id/30/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/30/200/200",
+      "tags": [
+        "nonstick",
+        "fry pan",
+        "ceramic",
+        "kitchen"
+      ],
+      "specifications": {
+        "diameter": "10 inch",
+        "material": "Aluminum with ceramic coating",
+        "dishwasher safe": "Yes"
+      },
+      "colors": [
+        "Gray",
+        "Navy"
+      ],
+      "isFeatured": true,
+      "createdAt": "2025-02-18T11:45:00Z"
+    },
+    {
+      "id": "prod_005",
+      "name": "Readify E-Reader",
+      "description": "6-inch glare-free display, weeks-long battery, waterproof, and 8GB storage for thousands of books.",
+      "category": "Electronics",
+      "subcategory": "E-Readers",
+      "price": 129.99,
+      "originalPrice": 149.99,
+      "discountPercent": 13,
+      "currency": "USD",
+      "stock": 45,
+      "sku": "EBOOK-005",
+      "brand": "Readify",
+      "rating": 4.8,
+      "reviewCount": 234,
+      "images": [
+        "https://picsum.photos/id/0/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/0/200/200",
+      "tags": [
+        "ereader",
+        "ebook",
+        "waterproof",
+        "long battery"
+      ],
+      "specifications": {
+        "screen": "6 inch E Ink",
+        "storage": "8GB",
+        "light": "Adjustable warm light"
+      },
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "isFeatured": false,
+      "createdAt": "2025-01-20T08:00:00Z"
+    },
+    {
+      "id": "prod_006",
+      "name": "PureEssence Aromatherapy Diffuser",
+      "description": "Ultrasonic essential oil diffuser with 7-color LED lights, auto shut-off, and 300ml capacity.",
+      "category": "Home & Kitchen",
+      "subcategory": "Home Decor",
+      "price": 24.99,
+      "originalPrice": 39.99,
+      "discountPercent": 38,
+      "currency": "USD",
+      "stock": 312,
+      "sku": "HOME-AR-006",
+      "brand": "PureEssence",
+      "rating": 4.3,
+      "reviewCount": 987,
+      "images": [
+        "https://picsum.photos/id/13/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/13/200/200",
+      "tags": [
+        "diffuser",
+        "aromatherapy",
+        "essential oil",
+        "humidifier"
+      ],
+      "specifications": {
+        "capacity": "300ml",
+        "runtime": "6 hours",
+        "material": "BPA-free plastic"
+      },
+      "colors": [
+        "Wood Grain",
+        "White",
+        "Black"
+      ],
+      "isFeatured": false,
+      "createdAt": "2025-03-01T16:20:00Z"
+    },
+    {
+      "id": "prod_007",
+      "name": "PowerMax 20000mAh Power Bank",
+      "description": "Fast charging power bank with dual USB ports, LED indicator, and slim design. Charges phones up to 5 times.",
+      "category": "Electronics",
+      "subcategory": "Accessories",
+      "price": 39.99,
+      "originalPrice": 59.99,
+      "discountPercent": 33,
+      "currency": "USD",
+      "stock": 178,
+      "sku": "ACC-PB-007",
+      "brand": "PowerMax",
+      "rating": 4.2,
+      "reviewCount": 534,
+      "images": [
+        "https://picsum.photos/id/0/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/0/200/200",
+      "tags": [
+        "power bank",
+        "portable charger",
+        "fast charging",
+        "usb-c"
+      ],
+      "specifications": {
+        "capacity": "20000mAh",
+        "output": "5V/2.4A",
+        "weight": "340g"
+      },
+      "colors": [
+        "Black",
+        "Silver"
+      ],
+      "isFeatured": false,
+      "createdAt": "2025-02-25T13:10:00Z"
+    },
+    {
+      "id": "prod_008",
+      "name": "LuxeLoft Cotton Bed Sheets Set",
+      "description": "400-thread-count 100% Egyptian cotton sheets, deep pockets, includes fitted sheet, flat sheet, and two pillowcases.",
+      "category": "Home & Kitchen",
+      "subcategory": "Bedding",
+      "price": 79.99,
+      "originalPrice": 129.99,
+      "discountPercent": 38,
+      "currency": "USD",
+      "stock": 67,
+      "sku": "HOM-BS-008",
+      "brand": "LuxeLoft",
+      "rating": 4.9,
+      "reviewCount": 311,
+      "images": [
+        "https://picsum.photos/id/24/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/24/200/200",
+      "tags": [
+        "sheets",
+        "cotton",
+        "bedding",
+        "luxury"
+      ],
+      "specifications": {
+        "thread count": "400",
+        "material": "Egyptian cotton",
+        "size": "Queen"
+      },
+      "colors": [
+        "White",
+        "Ivory",
+        "Light Gray",
+        "Sage Green"
+      ],
+      "sizes": [
+        "Twin",
+        "Full",
+        "Queen",
+        "King"
+      ],
+      "isFeatured": true,
+      "createdAt": "2025-01-30T12:00:00Z"
+    },
+    {
+      "id": "prod_009",
+      "name": "FlexiTrack Smart Fitness Watch",
+      "description": "Waterproof fitness tracker with heart rate monitor, sleep tracking, GPS, and 7-day battery life.",
+      "category": "Electronics",
+      "subcategory": "Wearables",
+      "price": 59.95,
+      "originalPrice": 99.95,
+      "discountPercent": 40,
+      "currency": "USD",
+      "stock": 94,
+      "sku": "FIT-WT-009",
+      "brand": "FlexiTrack",
+      "rating": 4.5,
+      "reviewCount": 1289,
+      "images": [
+        "https://picsum.photos/id/82/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/82/200/200",
+      "tags": [
+        "fitness watch",
+        "heart rate",
+        "gps",
+        "activity tracker"
+      ],
+      "specifications": {
+        "display": "1.3 inch AMOLED",
+        "water resistance": "5 ATM",
+        "compatibility": "iOS & Android"
+      },
+      "colors": [
+        "Black",
+        "Rose Gold",
+        "Blue"
+      ],
+      "isFeatured": true,
+      "createdAt": "2025-02-05T09:30:00Z"
+    },
+    {
+      "id": "prod_010",
+      "name": "GourmetGrill Cast Iron Pan",
+      "description": "Pre-seasoned 12-inch cast iron skillet, excellent heat retention, oven and grill safe.",
+      "category": "Home & Kitchen",
+      "subcategory": "Cookware",
+      "price": 34.99,
+      "originalPrice": 54.99,
+      "discountPercent": 36,
+      "currency": "USD",
+      "stock": 112,
+      "sku": "HOM-CI-010",
+      "brand": "GourmetGrill",
+      "rating": 4.7,
+      "reviewCount": 455,
+      "images": [
+        "https://picsum.photos/id/30/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/30/200/200",
+      "tags": [
+        "cast iron",
+        "skillet",
+        "seasoned",
+        "oven safe"
+      ],
+      "specifications": {
+        "diameter": "12 inch",
+        "material": "Cast iron",
+        "pre-seasoned": "Yes"
+      },
+      "colors": [
+        "Black"
+      ],
+      "isFeatured": false,
+      "createdAt": "2025-02-20T14:45:00Z"
+    },
+    {
+      "id": "prod_011",
+      "name": "StyleZen Lightweight Jacket",
+      "description": "Water-resistant windbreaker jacket, packable into its own pocket, ideal for travel and hiking.",
+      "category": "Clothing",
+      "subcategory": "Men's Outerwear",
+      "price": 59.99,
+      "originalPrice": 89.99,
+      "discountPercent": 33,
+      "currency": "USD",
+      "stock": 43,
+      "sku": "CLT-JK-011",
+      "brand": "StyleZen",
+      "rating": 4.3,
+      "reviewCount": 178,
+      "images": [
+        "https://picsum.photos/id/20/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/20/200/200",
+      "tags": [
+        "jacket",
+        "windbreaker",
+        "water resistant",
+        "packable"
+      ],
+      "specifications": {
+        "material": "100% Nylon",
+        "fit": "Regular",
+        "hood": "Adjustable"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Navy",
+        "Black",
+        "Red"
+      ],
+      "isFeatured": false,
+      "createdAt": "2025-03-05T10:20:00Z"
+    },
+    {
+      "id": "prod_012",
+      "name": "SnapCam 4K Action Camera",
+      "description": "Ultra HD action camera with electronic image stabilization, waterproof case (up to 30m), and Wi-Fi control.",
+      "category": "Electronics",
+      "subcategory": "Cameras",
+      "price": 149.99,
+      "originalPrice": 199.99,
+      "discountPercent": 25,
+      "currency": "USD",
+      "stock": 38,
+      "sku": "CAM-AC-012",
+      "brand": "SnapCam",
+      "rating": 4.4,
+      "reviewCount": 276,
+      "images": [
+        "https://picsum.photos/id/96/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/96/200/200",
+      "tags": [
+        "action camera",
+        "4k",
+        "waterproof",
+        "sports"
+      ],
+      "specifications": {
+        "video": "4K @ 30fps",
+        "photo": "12MP",
+        "battery": "1350mAh"
+      },
+      "colors": [
+        "Black",
+        "Orange"
+      ],
+      "isFeatured": false,
+      "createdAt": "2025-01-25T16:00:00Z"
+    },
+    {
+      "id": "prod_013",
+      "name": "FreshScent Laundry Detergent Pods",
+      "description": "Eco-friendly laundry pods, 3-in-1: detergent, stain remover, and brightener. 50 pods per pack.",
+      "category": "Household",
+      "subcategory": "Cleaning Supplies",
+      "price": 18.99,
+      "originalPrice": 24.99,
+      "discountPercent": 24,
+      "currency": "USD",
+      "stock": 500,
+      "sku": "HHL-LP-013",
+      "brand": "FreshScent",
+      "rating": 4.6,
+      "reviewCount": 892,
+      "images": [
+        "https://picsum.photos/id/29/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/29/200/200",
+      "tags": [
+        "laundry",
+        "pods",
+        "detergent",
+        "eco-friendly"
+      ],
+      "specifications": {
+        "count": "50 pods",
+        "scent": "Spring Breeze",
+        "compatible": "HE & standard"
+      },
+      "isFeatured": false,
+      "createdAt": "2025-02-12T08:30:00Z"
+    },
+    {
+      "id": "prod_014",
+      "name": "ErgoChair Pro Office Chair",
+      "description": "Ergonomic mesh office chair with adjustable lumbar support, headrest, and armrests. Supports up to 300 lbs.",
+      "category": "Furniture",
+      "subcategory": "Office Chairs",
+      "price": 249.99,
+      "originalPrice": 349.99,
+      "discountPercent": 29,
+      "currency": "USD",
+      "stock": 15,
+      "sku": "FUR-EC-014",
+      "brand": "ErgoChair",
+      "rating": 4.8,
+      "reviewCount": 621,
+      "images": [
+        "https://picsum.photos/id/106/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/106/200/200",
+      "tags": [
+        "office chair",
+        "ergonomic",
+        "mesh",
+        "adjustable"
+      ],
+      "specifications": {
+        "weight capacity": "300 lbs",
+        "material": "Mesh + Nylon",
+        "height range": "5'2\" - 6'4\""
+      },
+      "colors": [
+        "Black",
+        "Gray"
+      ],
+      "isFeatured": true,
+      "createdAt": "2025-01-10T11:15:00Z"
+    },
+    {
+      "id": "prod_015",
+      "name": "BeautyPure Vitamin C Serum",
+      "description": "Antioxidant serum with 20% Vitamin C, hyaluronic acid, and ferulic acid. Brightens skin and reduces fine lines.",
+      "category": "Beauty & Personal Care",
+      "subcategory": "Skincare",
+      "price": 27.99,
+      "originalPrice": 44.99,
+      "discountPercent": 38,
+      "currency": "USD",
+      "stock": 210,
+      "sku": "BEA-VC-015",
+      "brand": "BeautyPure",
+      "rating": 4.5,
+      "reviewCount": 1345,
+      "images": [
+        "https://picsum.photos/id/88/400/300"
+      ],
+      "thumbnail": "https://picsum.photos/id/88/200/200",
+      "tags": [
+        "serum",
+        "vitamin c",
+        "anti-aging",
+        "skincare"
+      ],
+      "specifications": {
+        "volume": "1 oz (30ml)",
+        "application": "AM or PM",
+        "skin types": "All"
+      },
+      "isFeatured": false,
+      "createdAt": "2025-03-08T15:30:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Electronics",
+      "subcategories": [
+        "Televisions",
+        "Audio",
+        "E-Readers",
+        "Accessories",
+        "Wearables",
+        "Cameras"
+      ]
+    },
+    {
+      "name": "Clothing",
+      "subcategories": [
+        "Men's Jeans",
+        "Men's Outerwear",
+        "Women's Dresses",
+        "Accessories"
+      ]
+    },
+    {
+      "name": "Home & Kitchen",
+      "subcategories": [
+        "Cookware",
+        "Home Decor",
+        "Bedding",
+        "Kitchen Appliances"
+      ]
+    },
+    {
+      "name": "Household",
+      "subcategories": [
+        "Cleaning Supplies",
+        "Laundry",
+        "Paper Goods"
+      ]
+    },
+    {
+      "name": "Furniture",
+      "subcategories": [
+        "Office Chairs",
+        "Tables",
+        "Storage"
+      ]
+    },
+    {
+      "name": "Beauty & Personal Care",
+      "subcategories": [
+        "Skincare",
+        "Makeup",
+        "Hair Care"
+      ]
+    }
+  ],
+  "filters": {
+    "priceRanges": [
+      {
+        "label": "Under $25",
+        "min": 0,
+        "max": 25
+      },
+      {
+        "label": "$25 - $50",
+        "min": 25,
+        "max": 50
+      },
+      {
+        "label": "$50 - $100",
+        "min": 50,
+        "max": 100
+      },
+      {
+        "label": "$100 - $200",
+        "min": 100,
+        "max": 200
+      },
+      {
+        "label": "$200+",
+        "min": 200,
+        "max": null
+      }
+    ],
+    "ratings": [
+      4.5,
+      4.0,
+      3.5,
+      3.0
+    ],
+    "brands": [
+      "UltraVision",
+      "AeroSound",
+      "UrbanFlex",
+      "HomeChef",
+      "Readify",
+      "PureEssence",
+      "PowerMax",
+      "LuxeLoft",
+      "FlexiTrack",
+      "GourmetGrill",
+      "StyleZen",
+      "SnapCam",
+      "FreshScent",
+      "ErgoChair",
+      "BeautyPure"
+    ],
+    "sortOptions": [
+      {
+        "value": "price_asc",
+        "label": "Price: Low to High"
+      },
+      {
+        "value": "price_desc",
+        "label": "Price: High to Low"
+      },
+      {
+        "value": "rating_desc",
+        "label": "Highest Rated"
+      },
+      {
+        "value": "newest",
+        "label": "Newest First"
+      }
+    ]
+  }
+}
