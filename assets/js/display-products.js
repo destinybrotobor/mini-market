@@ -3,7 +3,7 @@ let displayFeaturedProduct = (products) => {
     let productCard = '';
 
     featureProduct.forEach((productData, index) => {
-        console.log(productData);
+        // console.log(productData);
 
         if (index < 6) {
             productCard += `<div class="min-w-40 relative">
@@ -35,3 +35,29 @@ fetch('../assets/store/products.json')
     .then((data) => {
         displayFeaturedProduct(data.products);
     })
+
+
+// Display Categories
+let displayCategories = (categoryList) => {
+    let categoriesContainer = document.getElementById('categories-container');
+    let categoriesCard = '';
+
+    categoryList.forEach((category, index) => {
+        categoriesCard += `<div class="min-h-20 hover:shadow-lg bg-white hover:scale-105 transition-all duration-200 rounded-lg">
+                <aside class="h-64 overflow-hidden flex justify-center items-center rounded-lg">
+                    <img src="${category.thumbnail}" class="w-full min-h-full object-cover" />
+                </aside>
+                <p class="text-center text-base py-2 px-4">${category.name}</p>
+            </div>`
+    })
+    categoriesContainer.innerHTML = categoriesCard;
+}
+
+// Fetch the categories
+fetch('../assets/store/products.json')
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+        displayCategories(data.categories)
+    })
+

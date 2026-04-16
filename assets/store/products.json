@@ -584,6 +584,7 @@
   "categories": [
     {
       "name": "Electronics",
+      "thumbnail": "https://www.redeweb.com/wp-content/uploads/2023/10/aparatos-electronicos.jpg",
       "subcategories": [
         "Televisions",
         "Audio",
@@ -595,6 +596,7 @@
     },
     {
       "name": "Clothing",
+      "thumbnail": "https://images.theconversation.com/files/710097/original/file-20251222-56-3pf7fx.jpg?ixlib=rb-4.1.0&rect=0%2C660%2C7907%2C3953&q=45&auto=format&w=668&h=334&fit=crop",
       "subcategories": [
         "Men's Jeans",
         "Men's Outerwear",
@@ -604,6 +606,7 @@
     },
     {
       "name": "Home & Kitchen",
+      "thumbnail": "https://hips.hearstapps.com/hmg-prod/images/hbx100120birgittepearce-006-copy-1600802952.jpg?crop=0.590xw:0.885xh;0.216xw,0.115xh&resize=640:*",
       "subcategories": [
         "Cookware",
         "Home Decor",
@@ -613,6 +616,7 @@
     },
     {
       "name": "Household",
+      "thumbnail": "https://thumbs.dreamstime.com/b/house-cleaning-products-pile-white-background-household-chore-concept-39104697.jpg",
       "subcategories": [
         "Cleaning Supplies",
         "Laundry",
@@ -621,6 +625,7 @@
     },
     {
       "name": "Furniture",
+      "thumbnail": "https://www.lujoluxuryliving.com/cdn/shop/files/Image_5.jpg?crop=center&height=600&v=1747656940&width=400",
       "subcategories": [
         "Office Chairs",
         "Tables",
@@ -629,11 +634,62 @@
     },
     {
       "name": "Beauty & Personal Care",
+      "thumbnail": "https://d2ati23fc66y9j.cloudfront.net/category-pages/sub_category-174021874143.jpg",
       "subcategories": [
         "Skincare",
         "Makeup",
         "Hair Care"
       ]
+    },
+    {
+      "name": "Sports & Outdoors",
+      "thumbnail": "https://static.vecteezy.com/system/resources/thumbnails/074/376/997/small/collection-of-diverse-sports-equipment-and-athletic-gear-on-a-dark-reflective-background-photo.jpeg",
+      "subcategories": [
+        "Fitness Equipment",
+        "Camping Gear",
+        "Hiking"
+      ]
+    },
+    {
+      "name": "Baby & Kids",
+      "thumbnail": "https://media.istockphoto.com/id/930758668/photo/i-never-want-to-leave-this-place.jpg?s=612x612&w=0&k=20&c=0RFRk3gM_G7P6vzg5eCFG1yooIMt04I1IqJ0hWUj_eg=",
+      "subcategories": [
+        "Toys",
+        "Clothing",
+        "Baby Gear"
+      ]
+    },
+    {
+      "name": "Arts & Crafts",
+      "thumbnail": "https://thumbs.dreamstime.com/b/patchwork-arts-crafts-lettering-bright-colorful-text-set-doodle-art-icons-98721411.jpg",
+      "subcategories": [
+        "Painting",
+        "Drawing",
+        "Sewing"
+      ]
+    },
+    {
+      "name": "Pet Supplies",
+      "thumbnail": "https://media.istockphoto.com/id/1892103156/photo/a-young-man-and-his-pup-at-the-pet-shop.jpg?s=612x612&w=0&k=20&c=tdQ8Ad3E36TZjndYhEiJ9u3pgQfpxXEpvuGP2eZ2OmU=",
+      "subcategories": [
+        "Pet Food",
+        "Pet Toys",
+        "Pet Grooming"
+      ]
+    },
+    {
+      "name": "Automotive",
+      "thumbnail": "https://media.istockphoto.com/id/941796726/photo/confident-male-engineer-examining-car-chassis.jpg?s=612x612&w=0&k=20&c=YFyCWKg3rXQTv7PTSY2tJuymd4cSVq7TzeaDAnXitxo=",
+      "subcategories": [
+        "Car Parts",
+        "Car Accessories",
+        "Car Care"
+      ]
+    },
+    {
+      "name": "Fashion Gallery",
+      "thumbnail": "https://picsum.photos/id/0/200/200",
+      "subcategories": []
     }
   ],
   "filters": {
