@@ -7,8 +7,8 @@ let displayFeaturedProduct = (products) => {
 
         if (index < 6) {
             productCard += `<div class="min-w-40 relative">
-            <div class="w-full bg-slate-200 h-32 animate-pulse">
-                <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/83/7520914/1.jpg?4830" alt="${productData.name}" class="object-cover" />
+            <div class="w-full bg-slate-200 h-32 overflow-hidden flex justify-center items-center">
+                <img src="${productData.images[0]}" alt="${productData.name}" class="object-cover" />
             </div>
             <div class="flex flex-col p-1">
                 <h4>${productData.name}</h4>
