@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css" />
+    <title>
+        precious practise
+    </title>
+</head>
+
+
+<body>
+
+    <section id="container"
+        style="background-color:   rgb(247, 247, 249);  position: none;  grid-column: 30px; height: 300px; margin-top: 20px; display: flex; flex-wrap: wrap; gap: 3%;">
+        <nav style="background-color: brown; height: 30px;">
+
+        </nav>
+
+
+    </section>
+
+    <script>
+        let displayCategories = (categoryList) => {
+            let categoriesContainer = document.getElementById('container');
+            let categoriesCard = '';
+
+            categoryList.forEach((category, index) => {
+                categoriesCard += `<div   style="background-color: white;  border-radius:10px ; width:30% ; height:40%;  box-shadow: 0px 0px 8px ;">
+            <aside style="width: fit-content; height:20%; ">
+                <img style=" border-radius: 10px;" src="${category.thumbnail}" alt="">
+            </aside>
+            <p style="">${category.name}</p>
+        </div>`
+            })
+            categoriesContainer.innerHTML = categoriesCard;
+        }
+
+        // Fetch the categories
+        fetch('../assets/store/products.json')
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                displayCategories(data.categories)
+            })
+
+    
+    </script>
+
+</body>

@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "name": "precious",
+             "imagesl": "",
+            "phone": "08080664184",
+            "email": "cliffordprecious@gmail.com"
+           
+        },
+        {
+            "name": "EMMANUEL",
+            "phone": "08080664184",
+            "email": "emma@gmail.com"
+        },
+
+        {
+            "name": "precious",
+            "phone": "08080664184",
+            "email": "cliffordprecious@gmail.com"
+        },
+
+        {
+            "name": "precious",
+            "phone": "08080664184",
+            "email": "cliffordprecious@gmail.com"
+        }
+    ]
+}
