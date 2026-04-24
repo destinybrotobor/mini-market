@@ -17,7 +17,8 @@
     </h1>
 
     <section class="max-w-7xl m-auto py-10" id="blog-section">
-        <div id="blog-container" class="grid grid-cols-2 md:grid-cols-4 max-w-7xl mx-auto bg-white min-h-12 px-4 py-6 gap-4">
+        <div id="blog-container"
+            class="grid grid-cols-2 md:grid-cols-4 max-w-7xl mx-auto bg-white min-h-12 px-4 py-6 gap-4">
             <aside class="min-h-20 shadow-lg bg-white hover:scale-101 transition-all duration-200 rounded-lg">
                 <aside
                     class="h-40 overflow-hidden flex justify-center items-center rounded-lg bg-slate-300 skeleton-shimmer">
@@ -45,7 +46,6 @@
             let displayPosts = (posts) => {
                 let allPosts = '';
                 posts.forEach((post, index) => {
-                    
                     allPosts += `<a href="blog-details.html?id=${post.id}" class="block min-h-20 hover:shadow-lg bg-white hover:scale-101 transition-all duration-200 rounded-lg">
                         <aside class="h-40 overflow-hidden flex justify-center items-center rounded-lg bg-slate-300">
                         </aside>
@@ -55,11 +55,11 @@
                             <section class="flex justify-between items-center mt-2 text-xs">
                                 <div class="flex items-center gap-1">
                                     <figure class="bg-slate-300 h-7 w-7 rounded-full"></figure>
-                                    <span class="font-semibold">Author Name</span>
+                                    <span class="font-semibold">${post.author.name}</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <span>
-                                        <i class="fa-regular fa-comments text-base"></i> <span>23</span>
+                                        <i class="fa-regular fa-comments text-base"></i> <span>${post.comments.length}</span>
                                     </span>
                                     <button>
                                         <i class="fa-solid fa-share-alt text-base"></i>
@@ -71,30 +71,70 @@
                     `
                 });
 
-            
-            document.getElementById('blog-container').innerHTML = allPosts;
-            }
 
-            // Get Post Author Information using the userId property of the post object and fetch the user information from the API
-            let fetchPostAuthor = (userId) => {
-                fetch(`https://jsonplaceholder.typicode.com/users/${userId}`, {
-                    method: 'get'
-                })
-                    .then((res) => res.json())
-                    .then((user) => {
-                        return user;
-                    })
+                document.getElementById('blog-container').innerHTML = allPosts;
             }
 
             // A function to fetch all posts
-            let fetchPosts = () => {
-                fetch('https://jsonplaceholder.typicode.com/posts', {
+            let fetchPosts = async () => {
+                let allPosts = [];
+                let allUsers = [];
+                let allComments = [];
+
+                // Fetch Posts
+                await fetch('https://jsonplaceholder.typicode.com/posts', {
                     method: 'get'
                 })
                     .then((res) => res.json())
                     .then((posts) => {
-                        displayPosts(posts);
+                        allPosts = posts;
                     })
+                    .catch((error) => {
+                        if (!error.response) {
+                            if (String(error).toLocaleLowerCase().includes('network')) {
+                                // alert("No Network Connection! Check your network or network provider.");
+                                document.getElementById('blog-container').innerHTML = "No Network Connection! Check your network or network provider.";
+                            } else {
+                                // alert(error || 'An unexpected error occurred');
+                                document.getElementById('blog-container').innerHTML = error || 'An unexpected error occurred';
+                            }
+                        } else {
+                            // alert(error.response.data.message || 'An unexpected error occurred while fetching data');
+                            document.getElementById('blog-container').innerHTML = error.response.data.message || 'An unexpected error occurred while fetching data';
+                        }
+                    })
+
+                // Fetch Users
+                await fetch('https://jsonplaceholder.typicode.com/users')
+                    .then((response) => response.json())
+                    .then((users) => allUsers = users)
+
+
+                // Fetch Comments
+                await fetch('https://jsonplaceholder.typicode.com/comments')
+                    .then((response) => response.json())
+                    .then((comment) => allComments = comment)
+
+                // Display all Data
+                console.log("All Posts", allPosts);
+                console.log("All Users", allUsers);
+
+                // let user = allUsers.find((user) => user.id == 1);
+                // console.log(user);
+
+                allPosts.forEach((post, index) => {
+                    // Find the author from all users array and attach it to the current (index) post using the property 'author'
+                    let postAuthor = allUsers.find((user) => user.id == post.userId);
+                    allPosts[index].author = postAuthor;
+
+                    // filter all the comments, get the ones that belong to the current post and attach it using the property 'comments'
+                    let postComments = allComments.filter((comment) => comment.postId === post.id);
+                    allPosts[index].comments = postComments;
+                });
+
+                // console.log(allPosts[0]);
+
+                displayPosts(allPosts);
             }
 
             fetchPosts();
